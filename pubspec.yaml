@@ -66,19 +66,10 @@ flutter:
   assets:
 
     # Images
-    - assets/images/gettyimages-123317983-2048x2048.png
-    - assets/images/gettyimages-200489727-001-2048x2048.png
-    - assets/images/gettyimages-527842888-2048x2048.png
-    - assets/images/gettyimages-642394503-2048x2048.png
-    - assets/images/gettyimages-916194096-2048x2048.png
-    - assets/images/gettyimages-925542328-2048x2048.png
-    - assets/images/gettyimages-1097877340-2048x2048.png
-    - assets/images/gettyimages-1135377743-2048x2048.png
-    - assets/images/gettyimages-1282256052-2048x2048.png
+    - assets/images/
 
     # Icons
-    - assets/icons/cemedo_logo.png
-    - assets/icons/calendar_icon.png
+    - assets/icons/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
