@@ -1,3 +1,4 @@
+import 'package:cemedo/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:get/get.dart';
@@ -20,7 +21,7 @@ class CemedoApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Center(child: Text("Boom"),),
+      home: HomeScreen(),
     );
   }
 }
