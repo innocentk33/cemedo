@@ -2,6 +2,8 @@ import 'package:cemedo/constants/theme.dart';
 import 'package:cemedo/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
 
+import '../../widgets/cemedo_background.dart';
+
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
 
@@ -9,18 +11,41 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
 
-      child: Center( child: Column(
-        children: [
+      child: Scaffold(
+        body: CemedoBackground(
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
 
-          Text("Bienvenue sur"),
-          Assets.images.lOGOCEMEDOPng.image(height: 100),
-          ElevatedButton(onPressed: (){
+                Text("Bienvenue sur", style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w600
+                ),),
+                Assets.images.lOGOCEMEDOPng.image(),
+                GestureDetector(
+                  onTap: () {
 
-          }, child: Container(
-              color: kOrange,
-              child: Text("Continuer")),)
-        ],
-      )),
+                  },
+                  child: Container(
+                    padding: EdgeInsets.only(
+                        top: 8,
+                        bottom: 8,
+                        left: 10,
+                        right: 10
+                    ),
+                    color: kOrange.withAlpha(80),
+                    child: Text("Continuer", style: TextStyle(
+                        color: Colors.white
+                    ),),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
