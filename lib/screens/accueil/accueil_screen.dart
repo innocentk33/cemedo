@@ -21,8 +21,7 @@ class _AccueilScreenState extends State<AccueilScreen> {
                 height: 200,
                 width: double.infinity,
                 decoration: BoxDecoration(
-
-                    image: DecorationImage(image: Assets.images.homeCemedo,fit: BoxFit.cover)
+                  image: DecorationImage(image: Assets.images.homeCemedo,fit: BoxFit.cover),
                 ),
               ),
               Positioned(child: Assets.images.logo.image(height: 25),bottom: 100,left: 20,),
@@ -59,7 +58,7 @@ class _AccueilScreenState extends State<AccueilScreen> {
                 children: [
                   MenuItem(
                     onTap: () {},
-                    title: 'Teté consultation',
+                    title: 'Telé consultation',
                   ),
                   MenuItem(
                     onTap: () {},
