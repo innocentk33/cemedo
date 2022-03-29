@@ -1,3 +1,4 @@
+import 'package:cemedo/constants/constants.dart';
 import 'package:cemedo/constants/theme.dart';
 import 'package:cemedo/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,7 @@ class SplashScreen extends StatelessWidget {
 
                 Text("Bienvenue sur", style: TextStyle(
                   color: Colors.white,
-                  fontWeight: FontWeight.w600
+                  fontWeight: FontWeight.w600, fontFamily: kAppFontFamily
                 ),),
                 Assets.images.lOGOCEMEDOPng.image(),
                 GestureDetector(
@@ -29,11 +30,9 @@ class SplashScreen extends StatelessWidget {
 
                   },
                   child: Container(
-                    padding: EdgeInsets.only(
-                        top: 8,
-                        bottom: 8,
-                        left: 10,
-                        right: 10
+                    padding: EdgeInsets.symmetric(
+                      vertical: 8,
+                        horizontal: 10
                     ),
                     color: kOrange.withAlpha(80),
                     child: Text("Continuer", style: TextStyle(
