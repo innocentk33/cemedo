@@ -1,7 +1,9 @@
 import 'package:cemedo/constants/constants.dart';
 import 'package:cemedo/constants/theme.dart';
 import 'package:cemedo/gen/assets.gen.dart';
+import 'package:cemedo/screens/registration/phone_number_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../widgets/cemedo_background.dart';
 
@@ -27,7 +29,7 @@ class SplashScreen extends StatelessWidget {
                 Assets.images.lOGOCEMEDOPng.image(),
                 GestureDetector(
                   onTap: () {
-
+                    Get.to(() => PhoneNumberScreen());
                   },
                   child: Container(
                     padding: EdgeInsets.symmetric(
